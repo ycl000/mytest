@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<!--
+This is a starter template page. Use this page to start your new project from
+scratch. This page gets rid of all links and provides the needed markup only.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+<script src="/static/js/echarts.min.js"></script>
+  <title>AdminLTE 3 | Starter</title>
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="/static/AdminLTE-3.0.0-rc.6/plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="/static/AdminLTE-3.0.0-rc.6/dist/css/adminlte.min.css">
+  <!-- Google Font: Source Sans Pro -->
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+</head>
+<body class="hold-transition sidebar-mini">
+<div class="wrapper">
+
+  <!-- Navbar -->
+  <!--顶部导航栏-->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!--导航左边 Left navbar links -->
+    <ul class="navbar-nav">
+      <!--左边导航 三条杠-->
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#"><i class="fas fa-bars"></i></a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="index3.html" class="nav-link">Home</a>
+      </li>
+      <li class="nav-item d-none d-sm-inline-block">
+        <a href="#" class="nav-link">Contact</a>
+      </li>
+    </ul>
+
+    <!-- 查找 SEARCH FORM -->
+    <form class="form-inline ml-3">
+      <div class="input-group input-group-sm">
+        <input class="form-control form-control-navbar" type="search" placeholder="Search" aria-label="Search">
+        <div class="input-group-append">
+          <button class="btn btn-navbar" type="submit">
+            <i class="fas fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </form>
+
+    <!-- 导航栏右边选项Right navbar links -->
+    <ul class="navbar-nav ml-auto">
+      <!--微信下拉菜单 Messages Dropdown Menu  -->
+      <li class="nav-item dropdown">
+        <!--微信下拉菜单-->
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-comments"></i>
+          <span class="badge badge-danger navbar-badge">5</span>
+        </a>
+
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <!--消息-->
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <!--左边头像-->
+              <img src="/static/AdminLTE-3.0.0-rc.6/dist/img/user1-128x128.jpg" alt="User Avatar" class="img-size-50 mr-3 img-circle">
+              <!--右边消息 谁发的  内容 时间-->
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Brad Diesel
+                  <span class="float-right text-sm text-danger"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">Call me whenever you can...</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <!--隔离线-->
+          <div class="dropdown-divider"></div>
+           <!--消息-->
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="/static/AdminLTE-3.0.0-rc.6/dist/img/user8-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  John Pierce
+                  <span class="float-right text-sm text-muted"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">I got your message bro</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <!--隔离线-->
+          <div class="dropdown-divider"></div>
+           <!--消息-->
+          <a href="#" class="dropdown-item">
+            <!-- Message Start -->
+            <div class="media">
+              <img src="/static/AdminLTE-3.0.0-rc.6/dist/img/user3-128x128.jpg" alt="User Avatar" class="img-size-50 img-circle mr-3">
+              <div class="media-body">
+                <h3 class="dropdown-item-title">
+                  Nora Silvester
+                  <span class="float-right text-sm text-warning"><i class="fas fa-star"></i></span>
+                </h3>
+                <p class="text-sm">The subject goes here</p>
+                <p class="text-sm text-muted"><i class="far fa-clock mr-1"></i> 4 Hours Ago</p>
+              </div>
+            </div>
+            <!-- Message End -->
+          </a>
+          <!--隔离线-->
+          <div class="dropdown-divider"></div>
+          <a href="#" class="dropdown-item dropdown-footer">See All Messages</a>
+        </div>
+      </li>
+      <!-- <!--消息下拉菜单 Notifications Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <!--字体文件 多少条信息-->
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="far fa-bell"></i>
+          <span class="badge badge-warning navbar-badge">15</span>
+        </a>
+        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <!--一共多少个未读信息 下拉菜单头部-->
+          <span class="dropdown-header">15 Notifications</span>
+          <!--隔离线-->
+          <div class="dropdown-divider"></div>
+          <!--下拉菜单项1-->
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-envelope mr-2"></i> 4 new messages
+            <span class="float-right text-muted text-sm">3 mins</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <!--下拉菜单项2-->
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-users mr-2"></i> 8 friend requests
+            <span class="float-right text-muted text-sm">12 hours</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <!--下拉菜单项3-->
+          <a href="#" class="dropdown-item">
+            <i class="fas fa-file mr-2"></i> 3 new reports
+            <span class="float-right text-muted text-sm">2 days</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <!--下拉菜单项4-->
+          <a href="#" class="dropdown-item dropdown-footer">See All Notifications</a>
+        </div>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#"><i
+            class="fas fa-th-large"></i></a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->
+
+  <!-- Main Sidebar Container 左侧菜单栏-->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="index3.html" class="brand-link">
+      <img src="/static/AdminLTE-3.0.0-rc.6/dist/img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3"
+           style="opacity: .8">
+      <span class="brand-text font-weight-light">AdminLTE 3</span>
+    </a>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+      <!-- Sidebar user panel (optional) -->
+      <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+        <div class="image">
+          <img src="/static/AdminLTE-3.0.0-rc.6/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+        </div>
+        <div class="info">
+          <a href="#" class="d-block">Alexander Pierce</a>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <!-- Add icons to the links using the .nav-icon class
+               with font-awesome or any other icon font library -->
+          <li class="nav-item has-treeview menu-open">
+            <a href="#" class="nav-link active">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Starter Pages
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link active">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Active Page</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Inactive Page</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-th"></i>
+              <p>
+                Simple Link
+                <span class="right badge badge-danger">New</span>
+              </p>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>
+
+  <!-- 中间内容 Content Wrapper. Contains page content -->
+  <div class="content-wrapper">
+    <!-- 内容导航 头部 Content Header (Page header) -->
+    <div class="content-header">
+      <div class="container-fluid">
+        <!--中间内容第一行 头-->
+        <div class="row mb-2">
+          <div class="col-sm-6">
+            <h1 class="m-0 text-dark">Starter Page</h1>
+          </div><!-- /.col -->
+          <div class="col-sm-6">
+            <ol class="breadcrumb float-sm-right">
+              <li class="breadcrumb-item"><a href="#">Home</a></li>
+              <li class="breadcrumb-item active">Starter Page</li>
+            </ol>
+          </div><!-- /.col -->
+        </div><!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content-header -->
+
+    <!--主要内容 Main content -->
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <!--内容左边 两个卡片列-->
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-body">
+                <!--<h5 class="card-title">Card title</h5>-->
+              <div id="main" style="width: 500px;height:400px;"></div>
+
+              </div>
+            </div>
+
+            <div class="card card-primary card-outline">
+              <div class="card-body">
+          <div class="col-md-3" id="pieMap" style="width: 500px;height: 400px;"></div>
+
+              </div>
+            </div><!-- /.card -->
+          </div>
+          <!--  /.col-md-6 -->
+          <!--内容右边 列排-->
+          <div class="col-lg-6">
+            <div class="card">
+              <div class="card-header">
+                <h5 class="m-0">Featured</h5>
+              </div>
+              <div class="card-body">
+                 <div class="col-md-3" id="time" style="width: 500px;height: 400px;"></div>
+                <!--<h6 class="card-title">Special title treatment</h6>-->
+
+                <!--<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>-->
+                <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+              </div>
+            </div>
+
+            <div class="card card-primary card-outline">
+              <div class="card-header">
+                <h5 class="m-0">Featured</h5>
+              </div>
+              <div class="card-body">
+                <h6 class="card-title">Special title treatment</h6>
+
+                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                <a href="#" class="btn btn-primary">Go somewhere</a>
+              </div>
+            </div>
+          </div>
+          <!-- /.col-md-6 -->
+        </div>
+        <!-- /.row -->
+      </div><!-- /.container-fluid -->
+    </div>
+    <!-- /.content -->
+  </div>
+  <!-- /.content-wrapper -->
+
+  <!--右侧菜单栏 Control Sidebar -->
+  <aside class="control-sidebar control-sidebar-dark">
+    <!-- Control sidebar content goes here -->
+    <div class="p-3">
+      <h5>Title</h5>
+      <p>Sidebar content</p>
+    </div>
+  </aside>
+  <!-- /.control-sidebar -->
+
+  <!-- 底部标注 Main Footer -->
+  <footer class="main-footer">
+    <!-- To the right -->
+    <div class="float-right d-none d-sm-inline">
+      Anything you want
+    </div>
+    <!-- Default to the left -->
+    <strong>Copyright &copy; 2014-2019 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
+  </footer>
+</div>
+<!-- ./wrapper -->
+
+<!-- REQUIRED SCRIPTS -->
+
+<!-- jQuery -->
+<script src="/static/AdminLTE-3.0.0-rc.6/plugins/jquery/jquery.min.js"></script>
+<!-- Bootstrap 4 -->
+<script src="/static/AdminLTE-3.0.0-rc.6/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- AdminLTE App -->
+<script src="/static/AdminLTE-3.0.0-rc.6/dist/js/adminlte.min.js"></script>
+<script>
+  var myChart1 = echarts.init(document.getElementById('main'));
+  var mychart_time = echarts.init(document.getElementById('time'));
+  var mychart_pie_map = echarts.init(document.getElementById('pieMap'));
+
+        // 指定图表的配置项和数据
+        var option = {
+            title: {
+                text: 'ECharts 入门示例'
+            },
+            tooltip: {},
+            legend: {
+                data:['销量']
+            },
+            xAxis: {
+                data: ["衬衫","羊毛衫","雪纺衫","裤子","高跟鞋","袜子"]
+            },
+            yAxis: {},
+            series: [{
+                name: '销量',
+                type: 'bar',
+                data: [5, 20, 36, 10, 10, 20]
+            }]
+        };
+        // 使用刚指定的配置项和数据显示图表。
+        myChart1.setOption(option);
+
+         pie_map = {
+    title : {
+        text: '某站点用户访问来源',
+        subtext: '',
+        x:'center'
+    },
+    tooltip : {
+        trigger: 'item',
+        formatter: "{a} <br/>{b} : {c} ({d}%)"
+    },
+    legend: {
+        orient: 'vertical',
+        left: 'left',
+        data: ['福州市','南平市','宁德市','三明市','厦门市']
+    },
+    series : [
+        {
+            name: '访问来源',
+            type: 'pie',
+            radius : '55%',
+            center: ['50%', '60%'],
+            data:[{name: '福州市', value: 86266},
+                {name: '南平市', value: 116688},
+                {name: '宁德市', value: 29470},
+                {name: '三明市', value: 32576},
+                {name: '厦门市',value: 55715},],
+
+            roseType: 'radius',
+            label : {
+                normal : {
+                    formatter: '{b}:{c}: ({d}%)',
+                    textStyle : {
+                        fontWeight : 'normal',
+                        fontSize : 12
+                        }
+                    }
+            },
+
+            itemStyle: {
+                emphasis: {
+                    shadowBlur: 8,
+                    shadowOffsetX: 0,
+                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                }
+            }
+        }
+    ]
+};
+      mychart_pie_map.setOption(pie_map)
+
+   var first_data=[
+                     {name:'2005年6月',value:'989'},
+                     {name:'2005年7月',value:'1003'},
+                     {name:'2005年8月',value:'938'},
+                     {name:'2005年9月',value:'3684'},
+                     {name:'2005年10月',value:'679'},
+                     {name:'2005年11月',value:'349'},
+
+                    ]
+
+    var first_time=[
+                    '2005年6月', '2005年7月', '2005年8月',
+                    '2005年9月', '2005年10月', '2005年11月',]
+
+    var n =0
+    var data =[]
+    var time = []
+    var data1=[]
+
+    function randomData() {
+
+      data = []
+        time = []
+    //    console.log(n)
+        for (var k in data1){
+
+            if (Number(k)==6){
+            break;
+
+        }else {
+
+    //    name = k.name
+                var m = Number(k) + Number(n)
+                console.log(m)
+                if (6 ==data1.length -n) {
+                    for (var i in data1.slice(n,data1.length)){
+                        console.log(i)
+                        console.log(data1.length)
+                        var k = Number(i)+Number(n)
+                        console.log(data1[k].name)
+                        time.push(data1[k].name)
+                        data.push({'name': data1[k].name, 'value': data1[k].value})
+    //                    console.log(time)
+
+                    }
+
+                     n=0
+                    break;
+                }
+                else {
+    //        console.log(data1[k+n].name)
+                    time.push(data1[m].name)
+                    data.push({'name': data1[m].name, 'value': data1[m].value})
+    //                console.log(data)
+    //        data.push(data1.slice(0,k+n+1))
+
+                }
+            }
+    }
+
+    //console.log(time)
+
+    var info={"datas":data,"times":time};
+        return info
+    }
+
+     $.ajax({
+          type: "get",
+          url: "show/data",
+          dataType: "json",
+          success: function (data) {
+//               mychart1.setOption(pie("总发放积分",data.jifen[0],'#CD3925'))
+//                mychart2.setOption(pie("已用积分",data.jifen[1],"#BBCD28"))
+//                mychart3.setOption(pie("待用积分",data.jifen[2],"#67E172"))
+              console.log(data.u_time)
+              data1=data.u_time
+              console.log(data)
+              console.log(data.c_num)
+              console.log(data.u_time)
+//              proOption = {
+//             backgroundColor:"#fff",
+//                title: {
+//
+//                    x:'center',
+//                    y:'2%',
+//        textStyle:{
+//                fontSize: 15,
+//                fontWeight: 'bolder',
+//                }
+//                },
+//                tooltip : {
+//                    trigger: 'item',
+//        	        formatter:"{b}:{c}"
+//                },
+//    //    	    geo: {
+//    //    	        map: '福建',
+//    //    	        label: {
+//    //    	            emphasis: {
+//    //    	                show: true
+//    //    	            }
+//    //    	        } ,
+//    //    	        roam:true,
+//    //    	        itemStyle: {
+//    //    	            normal: {
+//    //    	                areaColor: '#45c8ff',
+//    //    	                borderColor: '#fff'
+//    //    	            },
+//    //    	            emphasis: {
+//    //    	                areaColor: '#00aeee'
+//    //    	            }
+//    //    	        }
+//    //    	    },
+//
+//    //    	    visualMap: {
+//    //        min: 0,
+//    //        max: 116688,
+//    //        left: '20px',
+//    //        top: 'bottom',
+//    //        color:['#dd1d32','#325dc3','#429ffc','#3299fe','#79bcff','#9dcdfe','#bee0d0'],
+//    //        text: ['高','低'],           // 文本，默认为数值文本
+//    //        calculable: true
+//    //    },
+//          //左侧小导航图标
+//                    visualMap: {
+//                        show : true,
+//                        x: 'left',
+//                        y: 'center',
+//                        splitList: [
+//                            {start:0, end:20000},{start:20000 , end:40000 },
+//                            {start: 40000, end:60000 },{start: 60000, end:80000 },
+//                            {start: 80000, end:100000 },{start:100000 , end:120000 },
+//                        ],
+//                        color: ['#5475f5', '#9feaa5', '#85daef','#74e2ca', '#e6ac53', '#9fb5ea']
+//                    },
+//
+//                series : [
+//                    {
+//                         name: '数据',
+//                        type: 'map',
+//                        mapType: '福建',
+//                        roam: true,
+//                        label: {
+//                            normal: {
+//                                show: true  //省份名称
+//                            },
+//                            emphasis: {
+//                                show: true
+//                            }
+//                        },
+//
+//                        data: data.c_num
+//
+//
+//                    }
+//                ]
+//            };
+//              proMap.setOption(proOption);
+
+
+
+    setInterval(function () {
+
+            n=n+1
+
+
+     var info=randomData();
+        var datas=[]
+         var time1=[]
+        datas.push(info["datas"])
+        time1.push(info["times"])
+    //    console.log(datas)
+
+
+        mychart4.setOption(option(info["datas"],info["times"]));
+
+    //    console.log(option(info["datas"],info["times"]))
+    },1000);
+//    option_rank = {
+//        title: {
+//            text: '积分排行',
+//
+//        },
+//        tooltip: {
+//            trigger: 'axis',
+//            axisPointer: {
+//                type: 'shadow'
+//            }
+//        },
+//
+//        grid: {
+//            left: '3%',
+//            right: '4%',
+//            bottom: '3%',
+//            containLabel: true
+//        },
+//        xAxis: {
+//            type: 'value',
+//            boundaryGap: [0, 0.01]
+//        },
+//        yAxis: {
+//            type: 'category',
+//            data: data.jifen_card
+//        },
+//        series: [
+//            {
+//                name: '积分排行',
+//                type: 'bar',
+//                data: data.jifen_count
+//            },
+//
+//        ]
+//    };
+//    mychart_rank.setOption(option_rank)
+
+//              pie_map = {
+//    title : {
+//        text: '某站点用户访问来源',
+//        subtext: '',
+//        x:'center'
+//    },
+//    tooltip : {
+//        trigger: 'item',
+//        formatter: "{a} <br/>{b} : {c} ({d}%)"
+//    },
+//    legend: {
+//        orient: 'vertical',
+//        left: 'left',
+//        data: ['福州市','南平市','宁德市','三明市','厦门市']
+//    },
+//    series : [
+//        {
+//            name: '访问来源',
+//            type: 'pie',
+//            radius : '55%',
+//            center: ['50%', '60%'],
+//            data:[{name: '福州市', value: 86266},
+//                {name: '南平市', value: 116688},
+//                {name: '宁德市', value: 29470},
+//                {name: '三明市', value: 32576},
+//                {name: '厦门市',value: 55715},],
+//
+//            roseType: 'radius',
+//            label : {
+//                normal : {
+//                    formatter: '{b}:{c}: ({d}%)',
+//                    textStyle : {
+//                        fontWeight : 'normal',
+//                        fontSize : 12
+//                        }
+//                    }
+//            },
+//
+//            itemStyle: {
+//                emphasis: {
+//                    shadowBlur: 8,
+//                    shadowOffsetX: 0,
+//                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+//                }
+//            }
+//        }
+//    ]
+//};
+
+      mychart_pie_map.setOption(pie_map)
+
+
+          },
+          error: function () {
+            alert('Error: ajax 请求出错！')
+          }
+        });
+
+
+</script>
+</body>
+</html>
